@@ -1,0 +1,41 @@
+@startuml
+title Conditional - R,S,P
+
+start
+
+:user input A; 
+:user input the B;
+
+
+if(r)
+
+    if(r)
+        :D;
+    else if(s)
+        :W;
+    else if(p)
+        :L;
+else if(s)
+    if(r)
+        :L;
+    else if(s)
+        :D;
+     else if(p)
+        :W;
+
+else if(p)
+    if(r)
+        :W;
+    else if(s)
+        :L;
+    else if(p)
+        :D; 
+
+else 
+    :error;
+endif
+:print result;
+
+stop 
+
+@enduml 
