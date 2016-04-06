@@ -1,12 +1,12 @@
 ﻿import turtle
 wn=turtle.Screen()
 t1=turtle.Turtle()
-def multiple():
+def multiple(begin,end):
 	sum=0
-	for i in range (0,1000):
+	for i in range (begin,end):
 		if not i%3 or i%5:
 			sum=sum+i
 	print sum
-multiple()
+multiple(0,1000)
 
 wn.exitonclick()
