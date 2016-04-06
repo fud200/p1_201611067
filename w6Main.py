@@ -7,6 +7,6 @@ def multiple(begin,end):
 		if not i%3 or i%5:
 			sum=sum+i
 	print sum
-multiple(0,1000)
+multiple(0,1001)
 
 wn.exitonclick()
