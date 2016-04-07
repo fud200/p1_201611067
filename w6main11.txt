@@ -1,0 +1,28 @@
+@startuml  
+  
+title Leap year  
+  
+  
+start  
+  
+:input year;   
+  
+  
+if (year%4==0) and (year%100!=0 or year%400==0) then (yes)  
+  :print "This year is leap year;  
+  
+  
+else if (year%4 and year%400) then (yes)   
+  :This year is not leap year;  
+  
+else if (not enough)  
+  :error;  
+   
+  
+endif  
+  
+:output result;  
+  
+stop  
+  
+@enduml  
