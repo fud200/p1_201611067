@@ -1,0 +1,18 @@
+@startuml 
+title UpDown Game 
+start  
+:Select random one number in range; 
+:Try to guess the number; 
+:Player input one number;  
+while(Play) 
+if (Compare Player number & answer) then (Plater nember < answer) 
+:Up; 
+else (Player nember > answer) 
+:Down; 
+endif 
+endwhile 
+:Player number = answer; 
+:You win; 
+:End Game; 
+stop 
+@enduml 
