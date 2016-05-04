@@ -1,0 +1,21 @@
+﻿import math
+kyungbokgung=tuple()
+kyungbokgung=(37.575797, 126.973468)
+gwang=tuple()
+gwang=(37.571599, 126.976584)
+anguk=tuple()
+anguk=(37.576481, 126.985449)
+dokrib=tuple()
+dokrib=(37.574559, 126.957765)
+jonggak=tuple()
+jonggak=(37.570149, 126.983076)
+cityhall=tuple()
+cityhall=(37.565696, 126.977114)
+stations=list()
+stations=[kyungbokgung,gwang,anguk,dokrib,jonggak,cityhall]
+dist=list()
+for s in range(1,6):
+    distance=math.sqrt((stations[s][0]-stations[0][0])**2+(stations[s][1]-stations[0][1])**2)
+    dist.append(distance)
+print "minimum distance is %s" %min(dist)
+raw_input()
