@@ -18,7 +18,7 @@ t1.fd(50)
 t1.penup()
 t1.home()
 def k1():
-    t1.fd(30)
+    t1.fd(10)
     curpos=t1.pos()
     isOnLine(curpos,coord)
 wn.onkey(k1,"Up")
@@ -27,7 +27,7 @@ def k2():
 def k3():
     t1.right(90)
 def k4():
-    t1.bk(30)
+    t1.bk(10)
     curpos=t1.pos()
     isOnLine(curpos,coord)
 wn.onkey(k2,"Left")
